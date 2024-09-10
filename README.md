@@ -119,9 +119,9 @@ Build a web application using Next.js for the frontend and integrate it with a D
 - `/api/bar-chart-data/`: Returns JSON data for the Bar chart.
 - `/api/pie-chart-data/`: Returns JSON data for the Pie chart.
 
-# Data Structures
+### Data Structures
 
-**Candlestick Data**
+# Candlestick Data
 
 ```json
 {

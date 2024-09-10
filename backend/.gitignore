@@ -26,3 +26,6 @@ coverage/
 *.coverage
 .coverage.*
 *.cover
+
+# Docker
+docker-compose.override.yml
