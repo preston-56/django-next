@@ -112,12 +112,24 @@ Build a web application using Next.js for the frontend and integrate it with a D
 
 # API Endpoints
 
-- The Django backend provides the following API endpoints:
+The Django backend provides the following API endpoints:
 
 - `/api/candlestick-data/`: Returns JSON data for the Candlestick chart.
+
+   ![candle-stick](./frontend/src/assets/candlestick-data.png)
 - `/api/line-chart-data/`: Returns JSON data for the Line chart.
+
+   ![line-chart](./frontend/src/assets/line-chart-data.png)
+
+
 - `/api/bar-chart-data/`: Returns JSON data for the Bar chart.
+
+   ![bar-chart](./frontend/src/assets/bar-chart-data.png)
+
+
 - `/api/pie-chart-data/`: Returns JSON data for the Pie chart.
+
+   ![pie-chart](./frontend/src/assets/pie-chart-data.png)
 
 ### Data Structures
 
