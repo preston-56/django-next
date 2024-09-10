@@ -254,4 +254,4 @@ docker run -p 3000:3000 frontend
 - Submit a pull request to the original repository.
   
 # License
-- This project is licensed under the[ MIT License](./LICENSE).
+- This project is licensed under the[ MIT License](./LICENSE.md).
