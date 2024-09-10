@@ -35,12 +35,12 @@ Build a web application using Next.js for the frontend and integrate it with a D
 
 1. Clone the repository:
     ```bash
-    git clone <repository-url>
+    git clone git@github.com:preston-56/django-next.git
     ```
 
 2. Navigate to the backend directory:
     ```bash
-    cd <repository-directory>/backend
+    cd backend
     ```
 
 3. Create a virtual environment (optional):
@@ -73,7 +73,7 @@ Build a web application using Next.js for the frontend and integrate it with a D
 1. Navigate to the frontend directory:
 
     ```bash
-    cd <repository-directory>/frontend
+    cd frontend
     ```
 
 2. Install the required packages:
@@ -215,6 +215,9 @@ docker run -p 3000:3000 frontend
 ```
 
 - The application should now be accessible at [http://localhost:3000](http://localhost:3000).
+  
+  **Django/Next Dashboard**
+![Dashboard](./frontend/src/assets/django-next.png)  
 
 # Contributing
 - If you would like to contribute to this project, please follow these steps:
@@ -225,4 +228,4 @@ docker run -p 3000:3000 frontend
 - Submit a pull request to the original repository.
   
 # License
-- This project is licensed under the MIT License - see the [LICENSE](./LICENSE).md file for details.
+- This project is licensed under the[ MIT License](./LICENSE).
