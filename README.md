@@ -209,8 +209,15 @@ docker build -t frontend .
 
 Run the Docker containers:
 
+ **To run the backend:**
+
 ```bash
 docker run -p 8000:8000 backend
+```
+
+ **To run the frontend:**
+
+```bash
 docker run -p 3000:3000 frontend
 ```
 
