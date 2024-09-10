@@ -1,12 +1,12 @@
-##Dashboard Application
+**Dashboard Application**
 
 A web application built with Next.js on the frontend and integrated with a Django API backend. The application features a dashboard page displaying multiple charts: Candlestick, Line Chart, Bar Chart, and Pie Chart. The data for these charts is retrieved from the backend.
 
-###Objective
+**Objective**
 
 Build a web application using Next.js for the frontend and integrate it with a Django API backend. The application will feature a basic dashboard page with multiple charts, and the data will be retrieved from the backend.
 
-###Features
+**Features**
 
 - Displays a dashboard with four types of charts: Candlestick, Line, Bar, and Pie.
 - Fetches data from a Django API backend.
@@ -14,7 +14,7 @@ Build a web application using Next.js for the frontend and integrate it with a D
 - Handles errors gracefully when fetching data from the API.
 - Responsive design for optimal viewing on different screen sizes.
 
-###Technologies Used
+**Technologies Used**
 
 - **Frontend:** Next.js, React, Axios (for API calls)
 - **Backend:** Django, Django REST Framework (optional)
@@ -22,16 +22,16 @@ Build a web application using Next.js for the frontend and integrate it with a D
 - **Testing:** Jest, React Testing Library
 - **Optional:** TypeScript, Docker
 
-###Installation
+**Installation**
 
-#### Prerequisites
+**Prerequisites**
 
 - Node.js
 - Python
 - pip
 - virtualenv (optional)
 
-####Backend Setup
+**Backend Setup**
 
 1. Clone the repository:
     ```bash
@@ -39,90 +39,87 @@ Build a web application using Next.js for the frontend and integrate it with a D
     ```
 
 2. Navigate to the backend directory:
-3. 
     ```bash
     cd <repository-directory>/backend
     ```
 
-4. Create a virtual environment (optional):
-5. 
+3. Create a virtual environment (optional):
+    
     ```bash
     virtualenv env
     source env/bin/activate
     ```
 
-6. Install the required packages:
-7. 
+4. Install the required packages:
+    
     ```bash
     pip install -r requirements.txt
     ```
 
-8. Apply database migrations:
-9. 
+5. Apply database migrations:
+    
     ```bash
     python3 manage.py migrate
     ```
 
-10. Start the Django development server:
-11. 
+6.  Start the Django development server:
+ 
     ```bash
     python3 manage.py runserver
     ```
 
-####Frontend Setup
+**Frontend Setup**
 
 1. Navigate to the frontend directory:
-2. 
+
     ```bash
     cd <repository-directory>/frontend
     ```
 
-3. Install the required packages:
-4. 
-    ```bash
-    npm install
-    ```
+2. Install the required packages:
 
-5. Start the Next.js development server:
-6. 
+```bash
+    npm install
+```
+3. Start the Next.js development server:
+
     ```bash
     npm run dev
     ```
 
-### Usage
+**Usage**
 
-####Running the Application
+***Running the Application***
 
 1. Start the Django backend server:
-2. 
+
     ```bash
     cd backend
     python manage.py runserver
     ```
 
-3. Start the Next.js frontend server:
-4. 
+2. Start the Next.js frontend server:
+ 
     ```bash
     cd frontend
     npm run dev
     ```
 
-####Accessing the Dashboard
+***Accessing the Dashboard***
+- Open your web browser and navigate to [http://localhost:3000](http://localhost:3000). You should see the dashboard with the four charts.
 
-Open your web browser and navigate to [http://localhost:3000](http://localhost:3000). You should see the dashboard with the four charts.
+**API Endpoints**
 
-###API Endpoints
-
-The Django backend provides the following API endpoints:
+- The Django backend provides the following API endpoints:
 
 - `/api/candlestick-data/`: Returns JSON data for the Candlestick chart.
 - `/api/line-chart-data/`: Returns JSON data for the Line chart.
 - `/api/bar-chart-data/`: Returns JSON data for the Bar chart.
 - `/api/pie-chart-data/`: Returns JSON data for the Pie chart.
 
-###Data Structures
+**Data Structures**
 
-####Candlestick Data
+***Candlestick Data***
 
 ```json
 {
@@ -145,7 +142,7 @@ The Django backend provides the following API endpoints:
 }
 
 
-####Line Chart Data
+**Line Chart Data**
 
 ```json
 
@@ -155,7 +152,7 @@ The Django backend provides the following API endpoints:
 }
 ```
 
-### Bar Chart Data
+** Bar Chart Data**
 
 ```json
 
@@ -165,7 +162,7 @@ The Django backend provides the following API endpoints:
 }
 ```
 
-###Pie Chart Data
+**Pie Chart Data**
 
 ```json
 
@@ -175,7 +172,7 @@ The Django backend provides the following API endpoints:
 }
 ```
 
-###Testing
+**Testing**
 Unit Tests
 
 To run the unit tests for the Django API:
@@ -185,7 +182,7 @@ cd backend
 python3 manage.py test
 ```
 
-###Integration Tests
+**Integration Tests**
 - To run the integration tests for the Next.js frontend:
 
 ```bash
@@ -193,7 +190,7 @@ cd frontend
 npm test
 ```
 
-###Deployment
+**Deployment**
 Docker
 - To deploy the application using Docker:
 
@@ -212,16 +209,16 @@ Run the Docker containers:
 docker run -p 8000:8000 backend
 docker run -p 3000:3000 frontend
 ```
+
 - The application should now be accessible at [http://localhost:3000](http://localhost:3000).
 
-#### Contributing
+**Contributing**
 - If you would like to contribute to this project, please follow these steps:
-
 - Fork the repository.
 - Create a new branch for your feature or bug fix.
 - Make your changes and commit them.
 - Push your changes to your forked repository.
 - Submit a pull request to the original repository.
   
-### License
+**License**
 - This project is licensed under the MIT License - see the [LICENSE](./LICENSE).md file for details.
