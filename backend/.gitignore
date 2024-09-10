@@ -1,0 +1,28 @@
+# Ignore Python bytecode
+*.pyc
+__pycache__/
+
+# Ignore virtual environment directory
+env/
+
+# Ignore Django secret keys and other sensitive data
+*.env
+
+# Ignore database files
+*.sqlite3
+
+# Ignore media files
+media/
+
+# Ignore logs
+*.log
+
+# Ignore Django migrations files
+*/migrations/*.py
+*/migrations/*.pyc
+
+# Other
+coverage/
+*.coverage
+.coverage.*
+*.cover
