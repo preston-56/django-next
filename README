@@ -1,4 +1,5 @@
 # Dashboard Application
+# Dashboard Application
 
 A web application built with Next.js on the frontend and integrated with a Django API backend. The application features a dashboard page displaying multiple charts: Candlestick, Line Chart, Bar Chart, and Pie Chart. The data for these charts is retrieved from the backend.
 
@@ -78,9 +79,10 @@ Build a web application using Next.js for the frontend and integrate it with a D
 
 2. Install the required packages:
 
-```bash
+    ```bash
     npm install
-```
+
+    ```
 3. Start the Next.js development server:
 
     ```bash
@@ -120,7 +122,7 @@ Build a web application using Next.js for the frontend and integrate it with a D
 
 # Data Structures
 
-# Candlestick Data
+**Candlestick Data**
 
 ```json
 {
@@ -141,6 +143,8 @@ Build a web application using Next.js for the frontend and integrate it with a D
     }
   ]
 }
+
+```
 
 
 # Line Chart Data
