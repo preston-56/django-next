@@ -1,5 +1,5 @@
 # Use the official Node.js image as a base
-FROM node:18
+FROM node:18-bullseye
 
 # Set the working directory
 WORKDIR /app
