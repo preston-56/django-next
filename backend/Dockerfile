@@ -1,31 +1,25 @@
-# Use the official Python image from the Docker Hub
-FROM python:3.11-slim
+# Use Python 3.8.10 as the base image
+FROM python:3.8.10-slim
 
-# Set environment variables to prevent Python from writing .pyc files to disc
-ENV PYTHONUNBUFFERED=1
-
-# Set the working directory in the container
+# Set the working directory
 WORKDIR /app
 
-# Install system dependencies
+# Install dependencies
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends \
-    build-essential \
-    libpq-dev \
-    && rm -rf /var/lib/apt/lists/*
+    && apt-get install -y --no-install-recommends gcc
 
-# Copy the requirements file into the container
+# Copy the requirements file
 COPY requirements.txt /app/
 
 # Install Python dependencies
 RUN pip install --upgrade pip \
     && pip install -r requirements.txt
 
-# Copy the project files into the container
+# Copy the rest of the application
 COPY . /app/
 
-# Expose the port the app runs on
+# Expose the application port
 EXPOSE 8000
 
-# Command to run the application
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "chartapi.wsgi:application"]
+# Run the application
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
