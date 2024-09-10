@@ -214,13 +214,13 @@ Install Docker on your system.
 
 Build the Docker images for the backend and frontend:
 
-**Backend deployment**
+**Run the backend build command**
 ```bash
 cd backend
 docker build -t backend .
 
 ```
-**Frontend deployment**
+**Run the frontend  build command**
 ```bash
 cd frontend
 docker build -t frontend .
